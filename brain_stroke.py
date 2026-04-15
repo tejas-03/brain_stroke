@@ -12,7 +12,7 @@ st.write("Files in directory:", os.listdir())
 # Load Model Safely
 # -------------------------------
 try:
-    model = joblib.load("stroke_model.pkl")
+    model = joblib.load("brain_stroke.pkl")
 except FileNotFoundError:
     st.error("❌ Model file 'stroke_model.pkl' not found. Please upload it.")
     st.stop()
